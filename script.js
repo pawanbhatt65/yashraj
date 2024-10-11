@@ -5,9 +5,10 @@ document.addEventListener("DOMContentLoaded", function () {
   const hiddenBoxElm = document.querySelectorAll(".hidden-box");
   const radiosElm = document.querySelectorAll(".input input[type='radio']");
 
-  // when we click any item
+  // when we click any items
   itemsElm.forEach((item) => {
     item.addEventListener("click", function (event) {
+      event.stopPropagation()
       // console.log(event.target)
       // removed all the items active class
       itemsElm.forEach((elm) => {
