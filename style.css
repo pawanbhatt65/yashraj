@@ -200,6 +200,7 @@ a {
   height: 15px;
   display: inline-block;
   position: relative;
+  cursor: pointer;
 }
 .input > label::before {
   content: "";
